@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SignupActivity">
+
+
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="@color/darkgreen"
+        android:textSize="35sp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/inputrelativ_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/logininputback"
+        android:elevation="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_rel"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:hint="Name"
+            android:textColorHint="@color/lightgrey"
+            app:hintTextColor="@color/lightgrey"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:errorEnabled="true"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:expandedHintEnabled="true"
+            android:enabled="true"
+            app:hintTextAppearance="?attr/textAppearanceCaption"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/lightgrey"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_rel12"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:hint="Email address"
+            android:layout_below="@id/login_rel"
+            android:textColorHint="@color/lightgrey"
+            app:hintTextColor="@color/lightgrey"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:errorEnabled="true"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15sp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:expandedHintEnabled="true"
+            android:enabled="true"
+            app:hintTextAppearance="?attr/textAppearanceCaption"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/lightgrey"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_rel21"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:hint="Mobile Number"
+            android:layout_below="@id/login_rel12"
+            android:textColorHint="@color/lightgrey"
+            app:hintTextColor="@color/lightgrey"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:errorEnabled="true"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:expandedHintEnabled="true"
+            android:enabled="true"
+            app:hintTextAppearance="?attr/textAppearanceCaption"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/lightgrey"
+            app:endIconMode="custom">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_phome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_rel1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_rel21"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:enabled="true"
+            app:errorEnabled="true"
+            android:hint="Password"
+            android:textColorHint="@color/lightgrey"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeWidth="1dp"
+            app:boxStrokeColor="@color/lightgrey"
+            app:endIconMode="custom"
+            app:expandedHintEnabled="true"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextAppearance="?attr/textAppearanceCaption"
+            app:hintTextColor="@color/lightgrey">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_email"
+                android:inputType="textPassword"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/login_loginbt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/login_rel1"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="20sp"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textSize="15dp"
+            app:backgroundTint="@color/darkgreen" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
